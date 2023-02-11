@@ -131,6 +131,7 @@ img {
 }
 
 /*bloque sobre nosotros*/
+
 .sobre-nosotros {
   margin-top: 5rem;
   /*en el primer valor es hacia donde ira el degradado*/
@@ -294,4 +295,21 @@ margin-bottom: .5rem;
 .copyright{
     text-align: center;
     margin-top: 5rem;;
+}
+
+/*NOSOTROS*/
+.contenido-nosotros{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /*mientras el contenido no llegue a los 250 pixeles asignale 1fr y 1fr y si no 1fr a cada uno de ellos*/
+  grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+  gap: 4rem;
+  
+
+}
+.informacion-nosotros{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  
 }
